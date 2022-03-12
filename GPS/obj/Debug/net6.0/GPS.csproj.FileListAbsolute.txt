@@ -1,0 +1,15 @@
+C:\Users\OPENE\source\repos\GPS\GPS\bin\Debug\net6.0\GPS.exe
+C:\Users\OPENE\source\repos\GPS\GPS\bin\Debug\net6.0\GPS.deps.json
+C:\Users\OPENE\source\repos\GPS\GPS\bin\Debug\net6.0\GPS.runtimeconfig.json
+C:\Users\OPENE\source\repos\GPS\GPS\bin\Debug\net6.0\GPS.dll
+C:\Users\OPENE\source\repos\GPS\GPS\bin\Debug\net6.0\GPS.pdb
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.csproj.AssemblyReference.cache
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.AssemblyInfoInputs.cache
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.AssemblyInfo.cs
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.csproj.CoreCompileInputs.cache
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.dll
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\refint\GPS.dll
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.pdb
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\GPS.genruntimeconfig.cache
+C:\Users\OPENE\source\repos\GPS\GPS\obj\Debug\net6.0\ref\GPS.dll
