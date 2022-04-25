@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GPS"
   ],
+  "SelectedNode": "\\GPS\\ReadString.cs",
   "PreviewInSolutionExplorer": false
 }

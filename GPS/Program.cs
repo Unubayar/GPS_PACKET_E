@@ -1,5 +1,5 @@
 ﻿using System;
 using GPS;
 
-ReadTextfile.Main();
+ReadString.Main();
 

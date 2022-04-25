@@ -53,14 +53,12 @@ namespace GPS
         {
             // 1. initialized properties
             header = packet[0..2];
-
-
-
+            Console.WriteLine(packet);
             length = BitConverter.ToUInt16(packet[2..4]);
             crcSum = BitConverter.ToUInt16(packet[^4..^2]);
             unitCode = packet[4..16];
             eventCode = packet[16..18];
-            //eventData = packet[..];
+            eventData = packet[18..(packet.Length - 4)];
             //crcSum = CRC16(packet);
             tail = packet[(packet.Length - 2)..packet.Length];
         }
