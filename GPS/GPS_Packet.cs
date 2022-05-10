@@ -51,6 +51,7 @@ namespace GPS
         // create constructure
         public GPS_Packet(byte[] packet)
         {
+            //packet.Length.Equals(tail, StringComparison.OrdinalIgnoreCase);
             // 1. initialized properties
             header = packet[0..2];
             Console.WriteLine(packet);
@@ -62,9 +63,6 @@ namespace GPS
             //crcSum = CRC16(packet);
             tail = packet[(packet.Length - 2)..packet.Length];
         }
-
-
-
         public bool check_packet(byte[] packet)
         {
             if (ByteArrayToString(header) == "4040")

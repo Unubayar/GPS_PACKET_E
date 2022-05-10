@@ -27,7 +27,8 @@ namespace GPS
                 GPSEventData gpsEventData = new GPSEventData(gps.eventData);
                 Console.WriteLine("Event Data ruu damjsan");
             }
-            else{
+            else
+            {
                 Console.WriteLine("Doesn't match mission 1: " + gps.check_packet(packet));
             }
         }
