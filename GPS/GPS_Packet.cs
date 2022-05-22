@@ -54,7 +54,7 @@ namespace GPS
             //packet.Length.Equals(tail, StringComparison.OrdinalIgnoreCase);
             // 1. initialized properties
             header = packet[0..2];
-            Console.WriteLine(packet);
+            Console.WriteLine(header.Length);
             length = BitConverter.ToUInt16(packet[2..4]);
             crcSum = BitConverter.ToUInt16(packet[^4..^2]);
             unitCode = packet[4..16];

@@ -7,6 +7,8 @@ namespace GPS
 {
     public class GPSEventData
     {
+        GPS_INFO gpsinfo = new();
+        UTC_TIME utc = new();
         public byte[] reportId { get; set; } = new byte[2];
         public byte[] gpsData { get; set; } = new byte[21];
         public byte[] ODBModule { get; set; } = new byte[4];
@@ -18,13 +20,16 @@ namespace GPS
         public string dateTime;
         public GPSEventData(byte[] eDate)
         {
+            //Login
+            //Send
             reportId = eDate[0..2];
-            gpsData = eDate[2..23];
-            ODBModule = eDate[23..27];
+            gpsData = gpsinfo.GPS(eDate[2..23]);
+            ODBModule = eDate[23..27]; 
             fireware = eDate[27..31];
             hardware = eDate[31..35];
             editedNumber = eDate[35..36];
-            editedNumberArr = eDate[36..(eDate.Length - 6)];
+            editedNumberArr = utc.UTC(eDate[36..42]);
+            //Reply
         }
     }
 }

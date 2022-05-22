@@ -41,8 +41,6 @@ namespace GPS
                 throw new ArgumentException(string.Format(CultureInfo.InvariantCulture, "the binary key cannot have an odd number of digits: {0}", hexstring));
             }
 
-
-
             byte[] data = new byte[hexstring.Length / 2];
             for (int index = 0; index < data.Length; index++)
             {

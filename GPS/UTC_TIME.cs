@@ -14,5 +14,10 @@ namespace GPS
         public byte[] hour;
         public byte[] minute;
         public byte[] second;
+        public byte[] UTC(byte[] utc_time)
+        {
+            Console.WriteLine(utc_time[0]);
+            return utc_time;
+        }
     }
 }
