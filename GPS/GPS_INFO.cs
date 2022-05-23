@@ -25,7 +25,7 @@ namespace GPS
             speed = info[15..17];
             course = info[17..19];
             high = info[19..21];
-            Console.WriteLine(info[0] + "GPS INFO");
+            Console.WriteLine(info[0] + "GPS INFkO");
             return info;
         }
         public static string ByteArrayToString(byte[] ba)
