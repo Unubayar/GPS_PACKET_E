@@ -15,14 +15,17 @@ namespace GPS
         public byte[] longitude { get; set; }
         public byte[] speed { get; set; }
         public byte[] course { get; set; }
-        public string high { get; set; }
+        public byte[] high { get; set; }
         public byte[] GPS(byte[] info)
         {
-            utc_time = utc.UTC(info[0..5]);
-            status = info[5..6];
-            latitude = info[6..10];
+            utc_time = utc.UTC(info[0..6]);
+            status = info[6..7];
+            latitude = info[7..11];
+            longitude = info[11..15];
+            speed = info[15..17];
+            course = info[17..19];
+            high = info[19..21];
             Console.WriteLine(info[0] + "GPS INFO");
-
             return info;
         }
         public static string ByteArrayToString(byte[] ba)
