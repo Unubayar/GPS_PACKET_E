@@ -21,18 +21,17 @@ namespace GPS
             
 
             // DISPLAYING DATA HERE
-           
+
             if (gps.check_packet(packet))
             {
                 GPSEventData gpsEventData = new GPSEventData(gps.eventData);
-                Console.WriteLine("Event Data ruu damjsan");
+                Console.WriteLine("Event Data ruu damjsan"); 
             }
             else
             {
                 Console.WriteLine("Doesn't match mission 1: " + gps.check_packet(packet));
             }
         }
-
         // convert hex string to byte array
         public static byte[] ConvertHexStringToByteArray(string hexstring)
         {
@@ -47,9 +46,6 @@ namespace GPS
                 string bytevalue = hexstring.Substring(index * 2, 2);
                 data[index] = byte.Parse(bytevalue, NumberStyles.HexNumber, CultureInfo.InvariantCulture);
             }
-
-
-
             return data;
         }
     }

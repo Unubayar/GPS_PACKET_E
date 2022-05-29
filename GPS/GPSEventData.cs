@@ -20,10 +20,11 @@ namespace GPS
         public string dateTime;
         public GPSEventData(byte[] eDate)
         {
+            byte[] gps = eDate[2..23];
             //Login
             //Send
             reportId = eDate[0..2];
-            gpsData = gpsinfo.GPS(eDate[2..23]);
+            gpsData = gpsinfo.GPS(gps);
             ODBModule = eDate[23..27]; 
             fireware = eDate[27..31];
             hardware = eDate[31..35];
